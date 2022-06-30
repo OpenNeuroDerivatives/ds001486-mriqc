@@ -1,1 +1,2200 @@
-../../../../.git/annex/objects/WM/vq/MD5E-s144274--ee5f853848186e474b2bf3dbf60cefed.21/MD5E-s144274--ee5f853848186e474b2bf3dbf60cefed.21
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-mriqc--21.0.0rc2.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds001486-mriqc participant --participant-label '122' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds001486_sub-122' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds001486 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds001486-mriqc
+220305-21:45:49,211 cli IMPORTANT:
+	 
+    Running MRIQC version 21.0.0rc2:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds001486-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds001486-mriqc.
+      * Analysis levels: ['participant'].
+
+220305-21:45:49,904 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:01,904 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:24,903 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220305-21:46:24,934 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220305-21:46:25,60 nipype.workflow INFO:
+	 Running in parallel.
+220305-21:46:25,64 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 23 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-21:46:25,248 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-01_bold.nii.gz/metadata".
+220305-21:46:25,390 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:46:29,818 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:31,343 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:32,79 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:32,376 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:33,796 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:33,934 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:33,972 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:34,615 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:34,642 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:34,647 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:34,856 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:35,338 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:35,340 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:35,378 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:35,513 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:36,393 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:36,444 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:36,700 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,114 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,121 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,129 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,591 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,607 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:37,617 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:39,392 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:39,490 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,40 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,139 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,503 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,509 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,552 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,572 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,773 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:41,779 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:42,573 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:42,640 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:42,643 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:42,887 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:42,995 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:43,25 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:43,26 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:43,54 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,257 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,286 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,290 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,404 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,518 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:45,933 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:46,65 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:46,71 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:46,570 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:46,856 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:47,87 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:47,171 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:47,230 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:47,289 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220305-21:46:53,997 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:46:53,998 nipype.workflow INFO:
+	 [Job 3] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:46:54,174 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-01_bold.nii.gz/provenance".
+220305-21:46:54,284 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:46:54,894 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:46:54,894 nipype.workflow INFO:
+	 [Job 4] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:46:55,56 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-02_bold.nii.gz/metadata".
+220305-21:46:55,158 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:48:08,513 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:48:08,513 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:48:08,622 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-02_bold.nii.gz/provenance".
+220305-21:48:08,628 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:48:08,750 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:48:08,750 nipype.workflow INFO:
+	 [Job 7] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:48:08,829 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-01_bold.nii.gz/metadata".
+220305-21:48:08,836 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:48:33,415 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:48:33,415 nipype.workflow INFO:
+	 [Job 9] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:48:33,522 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-01_bold.nii.gz/provenance".
+220305-21:48:33,528 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:48:33,651 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:48:33,651 nipype.workflow INFO:
+	 [Job 10] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:48:33,726 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-02_bold.nii.gz/metadata".
+220305-21:48:33,734 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:48:58,280 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:48:58,280 nipype.workflow INFO:
+	 [Job 12] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:48:58,387 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-02_bold.nii.gz/provenance".
+220305-21:48:58,392 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:48:58,513 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:48:58,513 nipype.workflow INFO:
+	 [Job 13] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:48:58,588 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Rhyming_bold.nii.gz/metadata".
+220305-21:48:58,594 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:49:23,72 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:49:23,72 nipype.workflow INFO:
+	 [Job 15] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:49:23,210 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Rhyming_bold.nii.gz/provenance".
+220305-21:49:23,216 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:49:23,417 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:49:23,417 nipype.workflow INFO:
+	 [Job 16] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:49:23,503 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-01_bold.nii.gz/metadata".
+220305-21:49:23,509 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:49:48,19 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:49:48,19 nipype.workflow INFO:
+	 [Job 18] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:49:48,136 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-01_bold.nii.gz/provenance".
+220305-21:49:48,142 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:49:48,264 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:49:48,264 nipype.workflow INFO:
+	 [Job 19] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:49:48,355 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-02_bold.nii.gz/metadata".
+220305-21:49:48,362 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220305-21:50:13,286 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220305-21:50:13,286 nipype.workflow INFO:
+	 [Job 21] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220305-21:50:13,434 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-02_bold.nii.gz/provenance".
+220305-21:50:13,440 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:50:13,566 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220305-21:50:13,566 nipype.workflow INFO:
+	 [Job 22] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220305-21:50:13,660 nipype.workflow INFO:
+	 [Job 0] Completed (mriqc_wf.anatMRIQC.conform).
+220305-21:50:13,661 nipype.workflow INFO:
+	 [Job 1] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220305-21:50:13,662 nipype.workflow INFO:
+	 [Job 2] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,662 nipype.workflow INFO:
+	 [Job 5] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,663 nipype.workflow INFO:
+	 [Job 8] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,663 nipype.workflow INFO:
+	 [Job 11] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,664 nipype.workflow INFO:
+	 [Job 14] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,665 nipype.workflow INFO:
+	 [Job 17] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,665 nipype.workflow INFO:
+	 [Job 20] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220305-21:50:13,666 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 10 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-21:50:15,663 nipype.workflow INFO:
+	 [Job 24] Completed (mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask).
+220305-21:50:15,664 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 26.82/30.00, Free processors: 40/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:17,665 nipype.workflow INFO:
+	 [Job 26] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,666 nipype.workflow INFO:
+	 [Job 27] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,666 nipype.workflow INFO:
+	 [Job 28] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,667 nipype.workflow INFO:
+	 [Job 29] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,667 nipype.workflow INFO:
+	 [Job 31] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,668 nipype.workflow INFO:
+	 [Job 32] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:17,669 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 12 jobs ready. Free memory (GB): 29.20/30.00, Free processors: 46/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.sanitize
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:19,666 nipype.workflow INFO:
+	 [Job 30] Completed (mriqc_wf.funcMRIQC.sanitize).
+220305-21:50:19,668 nipype.workflow INFO:
+	 [MultiProc] Running 14 tasks, and 2 jobs ready. Free memory (GB): 26.02/30.00, Free processors: 35/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:21,667 nipype.workflow INFO:
+	 [Job 36] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,668 nipype.workflow INFO:
+	 [Job 38] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,668 nipype.workflow INFO:
+	 [Job 40] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,669 nipype.workflow INFO:
+	 [Job 42] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,670 nipype.workflow INFO:
+	 [Job 46] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,670 nipype.workflow INFO:
+	 [Job 48] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:21,672 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 6 jobs ready. Free memory (GB): 27.51/30.00, Free processors: 39/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:23,668 nipype.workflow INFO:
+	 [Job 44] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220305-21:50:23,670 nipype.workflow INFO:
+	 [MultiProc] Running 15 tasks, and 1 jobs ready. Free memory (GB): 26.37/30.00, Free processors: 34/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:25,669 nipype.workflow INFO:
+	 [Job 25] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:50:25,670 nipype.workflow INFO:
+	 [Job 55] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,671 nipype.workflow INFO:
+	 [Job 60] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,671 nipype.workflow INFO:
+	 [Job 65] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,672 nipype.workflow INFO:
+	 [Job 70] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,672 nipype.workflow INFO:
+	 [Job 80] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,673 nipype.workflow INFO:
+	 [Job 85] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:25,675 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 27.81/30.00, Free processors: 40/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:27,671 nipype.workflow INFO:
+	 [Job 75] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220305-21:50:27,673 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 0 jobs ready. Free memory (GB): 28.06/30.00, Free processors: 41/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4
+220305-21:50:41,685 nipype.workflow INFO:
+	 [Job 23] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4).
+220305-21:50:41,687 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 2 jobs ready. Free memory (GB): 28.26/30.00, Free processors: 49/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:50:43,687 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 27.86/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:51:53,775 nipype.workflow INFO:
+	 [Job 34] Completed (mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet).
+220305-21:51:53,779 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 1 jobs ready. Free memory (GB): 28.06/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:51:55,778 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 27.86/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:51:57,781 nipype.workflow INFO:
+	 [Job 33] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip).
+220305-21:51:57,782 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 1 jobs ready. Free memory (GB): 28.06/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:51:59,783 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 27.86/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.sstrip_orig_vol
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:01,785 nipype.workflow INFO:
+	 [Job 49] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.sstrip_orig_vol).
+220305-21:52:01,787 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 2 jobs ready. Free memory (GB): 28.06/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:03,789 nipype.workflow INFO:
+	 [Job 86] Completed (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.binarize).
+220305-21:52:03,791 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 4 jobs ready. Free memory (GB): 23.06/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:05,792 nipype.workflow INFO:
+	 [MultiProc] Running 13 tasks, and 0 jobs ready. Free memory (GB): 19.46/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:07,794 nipype.workflow INFO:
+	 [Job 50] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask).
+220305-21:52:07,796 nipype.workflow INFO:
+	 [MultiProc] Running 12 tasks, and 0 jobs ready. Free memory (GB): 19.66/30.00, Free processors: 37/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:11,798 nipype.workflow INFO:
+	 [Job 124] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.smoothness).
+220305-21:52:11,800 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 0 jobs ready. Free memory (GB): 19.86/30.00, Free processors: 38/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:17,803 nipype.workflow INFO:
+	 [Job 126] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:52:17,804 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 0 jobs ready. Free memory (GB): 20.06/30.00, Free processors: 39/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:19,806 nipype.workflow INFO:
+	 [Job 125] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:52:19,807 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 20.26/30.00, Free processors: 40/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:39,832 nipype.workflow INFO:
+	 [Job 123] Completed (mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization).
+220305-21:52:39,833 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 2 jobs ready. Free memory (GB): 23.26/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:41,838 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 3 jobs ready. Free memory (GB): 23.06/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AirMaskWorkflow.invert_xfm
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:43,837 nipype.workflow INFO:
+	 [Job 254] Completed (_MNItpms2t10).
+220305-21:52:43,837 nipype.workflow INFO:
+	 [Job 255] Completed (_MNItpms2t11).
+220305-21:52:43,838 nipype.workflow INFO:
+	 [Job 256] Completed (_MNItpms2t12).
+220305-21:52:43,839 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 1 jobs ready. Free memory (GB): 23.06/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AirMaskWorkflow.invert_xfm
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:52:45,839 nipype.workflow INFO:
+	 [Job 186] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.MNItpms2t1).
+220305-21:52:45,841 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 23.06/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AirMaskWorkflow.invert_xfm
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:05,911 nipype.workflow INFO:
+	 [Job 185] Completed (mriqc_wf.anatMRIQC.AirMaskWorkflow.invert_xfm).
+220305-21:54:05,913 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 1 jobs ready. Free memory (GB): 23.26/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:07,914 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 0 jobs ready. Free memory (GB): 23.06/30.00, Free processors: 47/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:11,917 nipype.workflow INFO:
+	 [Job 201] Completed (mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask).
+220305-21:54:11,919 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 4 jobs ready. Free memory (GB): 23.26/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:12,25 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/anatMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..anat..sub-122_ses-T1_T1w.nii.gz/provenance".
+220305-21:54:12,34 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220305-21:54:12,137 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.anatMRIQC.ComputeIQMs.provenance".
+220305-21:54:12,137 nipype.workflow INFO:
+	 [Job 216] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.provenance).
+220305-21:54:13,919 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 0 jobs ready. Free memory (GB): 22.66/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:21,926 nipype.workflow INFO:
+	 [Job 41] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:21,928 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 4 jobs ready. Free memory (GB): 22.91/30.00, Free processors: 46/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:23,927 nipype.workflow INFO:
+	 [Job 39] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:23,928 nipype.workflow INFO:
+	 [Job 47] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:23,929 nipype.workflow INFO:
+	 [Job 66] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:23,931 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 8 jobs ready. Free memory (GB): 22.71/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:25,930 nipype.workflow INFO:
+	 [Job 67] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:25,931 nipype.workflow INFO:
+	 [Job 68] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:25,932 nipype.workflow INFO:
+	 [Job 61] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:25,932 nipype.workflow INFO:
+	 [Job 81] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:25,934 nipype.workflow INFO:
+	 [MultiProc] Running 15 tasks, and 5 jobs ready. Free memory (GB): 21.72/30.00, Free processors: 41/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:27,941 nipype.workflow INFO:
+	 [Job 35] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:27,942 nipype.workflow INFO:
+	 [Job 37] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:27,943 nipype.workflow INFO:
+	 [Job 45] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:54:27,943 nipype.workflow INFO:
+	 [Job 219] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask).
+220305-21:54:27,944 nipype.workflow INFO:
+	 [Job 69] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:27,945 nipype.workflow INFO:
+	 [Job 62] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:27,945 nipype.workflow INFO:
+	 [Job 63] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:27,946 nipype.workflow INFO:
+	 [Job 82] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:27,947 nipype.workflow INFO:
+	 [Job 83] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:27,947 nipype.workflow INFO:
+	 [Job 103] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:27,949 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 29 jobs ready. Free memory (GB): 22.96/30.00, Free processors: 46/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:29,942 nipype.workflow INFO:
+	 [Job 220] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask).
+220305-21:54:29,943 nipype.workflow INFO:
+	 [Job 64] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:29,944 nipype.workflow INFO:
+	 [Job 84] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:29,944 nipype.workflow INFO:
+	 [Job 51] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:29,945 nipype.workflow INFO:
+	 [Job 56] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:29,946 nipype.workflow INFO:
+	 [Job 76] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:54:29,947 nipype.workflow INFO:
+	 [MultiProc] Running 33 tasks, and 0 jobs ready. Free memory (GB): 10.32/30.00, Free processors: 23/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:31,943 nipype.workflow INFO:
+	 [Job 104] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:31,944 nipype.workflow INFO:
+	 [Job 105] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:31,945 nipype.workflow INFO:
+	 [Job 106] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:31,945 nipype.workflow INFO:
+	 [Job 107] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:31,946 nipype.workflow INFO:
+	 [Job 53] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:31,947 nipype.workflow INFO:
+	 [Job 58] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:31,947 nipype.workflow INFO:
+	 [Job 78] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:54:31,948 nipype.workflow INFO:
+	 [Job 120] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:31,949 nipype.workflow INFO:
+	 [Job 155] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:31,949 nipype.workflow INFO:
+	 [Job 158] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:31,951 nipype.workflow INFO:
+	 [MultiProc] Running 23 tasks, and 4 jobs ready. Free memory (GB): 12.47/30.00, Free processors: 33/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:33,944 nipype.workflow INFO:
+	 [Job 52] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:33,945 nipype.workflow INFO:
+	 [Job 54] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:33,946 nipype.workflow INFO:
+	 [Job 57] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:33,947 nipype.workflow INFO:
+	 [Job 59] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:33,947 nipype.workflow INFO:
+	 [Job 77] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:54:33,948 nipype.workflow INFO:
+	 [Job 79] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:54:33,948 nipype.workflow INFO:
+	 [Job 98] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:33,949 nipype.workflow INFO:
+	 [Job 99] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:33,950 nipype.workflow INFO:
+	 [Job 100] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:33,950 nipype.workflow INFO:
+	 [Job 101] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:33,951 nipype.workflow INFO:
+	 [Job 102] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:33,951 nipype.workflow INFO:
+	 [Job 118] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:33,952 nipype.workflow INFO:
+	 [Job 119] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:33,953 nipype.workflow INFO:
+	 [Job 121] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:33,953 nipype.workflow INFO:
+	 [Job 122] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:33,954 nipype.workflow INFO:
+	 [Job 156] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:33,954 nipype.workflow INFO:
+	 [Job 159] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:33,957 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 28 jobs ready. Free memory (GB): 12.45/30.00, Free processors: 39/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:35,947 nipype.workflow INFO:
+	 [MultiProc] Running 32 tasks, and 6 jobs ready. Free memory (GB): 0.01/30.00, Free processors: 17/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:37,948 nipype.workflow INFO:
+	 [Job 92] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:37,949 nipype.workflow INFO:
+	 [Job 97] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:37,950 nipype.workflow INFO:
+	 [Job 117] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:54:37,951 nipype.workflow INFO:
+	 [MultiProc] Running 29 tasks, and 6 jobs ready. Free memory (GB): 0.61/30.00, Free processors: 20/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:39,951 nipype.workflow INFO:
+	 [Job 218] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2).
+220305-21:54:39,953 nipype.workflow INFO:
+	 [Job 90] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:39,954 nipype.workflow INFO:
+	 [Job 91] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:39,954 nipype.workflow INFO:
+	 [Job 95] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:39,955 nipype.workflow INFO:
+	 [Job 96] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:39,955 nipype.workflow INFO:
+	 [Job 148] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:39,956 nipype.workflow INFO:
+	 [Job 150] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:39,957 nipype.workflow INFO:
+	 [Job 151] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:39,959 nipype.workflow INFO:
+	 [MultiProc] Running 23 tasks, and 4 jobs ready. Free memory (GB): 1.81/30.00, Free processors: 26/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:41,954 nipype.workflow INFO:
+	 [Job 157] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:41,955 nipype.workflow INFO:
+	 [Job 88] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:41,956 nipype.workflow INFO:
+	 [Job 89] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:41,956 nipype.workflow INFO:
+	 [Job 93] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:41,957 nipype.workflow INFO:
+	 [Job 94] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:41,958 nipype.workflow INFO:
+	 [Job 113] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:54:41,958 nipype.workflow INFO:
+	 [Job 114] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:54:41,959 nipype.workflow INFO:
+	 [Job 115] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:54:41,960 nipype.workflow INFO:
+	 [Job 116] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:54:41,960 nipype.workflow INFO:
+	 [Job 147] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:41,961 nipype.workflow INFO:
+	 [Job 182] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:41,963 nipype.workflow INFO:
+	 [MultiProc] Running 13 tasks, and 27 jobs ready. Free memory (GB): 3.81/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:43,956 nipype.workflow INFO:
+	 [Job 179] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:43,957 nipype.workflow INFO:
+	 [Job 181] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:43,958 nipype.workflow INFO:
+	 [Job 180] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:43,960 nipype.workflow INFO:
+	 [MultiProc] Running 26 tasks, and 11 jobs ready. Free memory (GB): 0.82/30.00, Free processors: 23/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:45,958 nipype.workflow INFO:
+	 [Job 183] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:45,959 nipype.workflow INFO:
+	 [Job 134] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:45,960 nipype.workflow INFO:
+	 [Job 142] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:45,961 nipype.workflow INFO:
+	 [MultiProc] Running 25 tasks, and 9 jobs ready. Free memory (GB): 1.02/30.00, Free processors: 24/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.smoothness
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:47,960 nipype.workflow INFO:
+	 [Job 149] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:47,961 nipype.workflow INFO:
+	 [Job 131] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:47,962 nipype.workflow INFO:
+	 [Job 132] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:47,962 nipype.workflow INFO:
+	 [Job 135] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:47,963 nipype.workflow INFO:
+	 [Job 139] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:47,964 nipype.workflow INFO:
+	 [Job 140] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:47,964 nipype.workflow INFO:
+	 [Job 143] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:47,965 nipype.workflow INFO:
+	 [Job 171] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:54:47,966 nipype.workflow INFO:
+	 [Job 172] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:54:47,966 nipype.workflow INFO:
+	 [Job 174] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:54:47,968 nipype.workflow INFO:
+	 [MultiProc] Running 15 tasks, and 9 jobs ready. Free memory (GB): 3.17/30.00, Free processors: 34/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:49,961 nipype.workflow INFO:
+	 [Job 154] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:54:49,962 nipype.workflow INFO:
+	 [Job 175] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:54:49,964 nipype.workflow INFO:
+	 [MultiProc] Running 14 tasks, and 9 jobs ready. Free memory (GB): 0.67/30.00, Free processors: 28/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:51,962 nipype.workflow INFO:
+	 [Job 133] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:51,963 nipype.workflow INFO:
+	 [Job 141] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:51,964 nipype.workflow INFO:
+	 [Job 173] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:54:51,965 nipype.workflow INFO:
+	 [MultiProc] Running 12 tasks, and 8 jobs ready. Free memory (GB): 0.96/30.00, Free processors: 30/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:53,963 nipype.workflow INFO:
+	 [Job 193] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:54:53,965 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 9 jobs ready. Free memory (GB): 1.26/30.00, Free processors: 31/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:54,90 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-02_bold.nii.gz/datasink".
+220305-21:54:54,214 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:54:54,237 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:54:54,237 nipype.workflow INFO:
+	 [Job 208] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:54:55,965 nipype.workflow INFO:
+	 [Job 146] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:54:55,966 nipype.workflow INFO:
+	 [Job 178] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:54:55,968 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 11 jobs ready. Free memory (GB): 1.86/30.00, Free processors: 33/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:56,382 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:54:56,382 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:54:57,966 nipype.workflow INFO:
+	 [Job 227] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:54:57,968 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 8 jobs ready. Free memory (GB): 1.26/30.00, Free processors: 31/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:54:59,967 nipype.workflow INFO:
+	 [Job 191] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:54:59,968 nipype.workflow INFO:
+	 [Job 199] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:54:59,970 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 10 jobs ready. Free memory (GB): 1.86/30.00, Free processors: 33/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:00,92 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-01_bold.nii.gz/datasink".
+220305-21:55:00,175 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:00,209 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:55:00,210 nipype.workflow INFO:
+	 [Job 206] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:55:00,334 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-02_bold.nii.gz/datasink".
+220305-21:55:00,370 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:00,405 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:55:00,406 nipype.workflow INFO:
+	 [Job 214] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:55:01,970 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 10 jobs ready. Free memory (GB): 1.86/30.00, Free processors: 33/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:02,369 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:02,369 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:02,400 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:02,400 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:03,970 nipype.workflow INFO:
+	 [Job 130] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:55:03,971 nipype.workflow INFO:
+	 [Job 138] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:55:03,972 nipype.workflow INFO:
+	 [Job 170] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:55:03,973 nipype.workflow INFO:
+	 [Job 225] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:55:03,973 nipype.workflow INFO:
+	 [Job 233] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:55:03,975 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 11 jobs ready. Free memory (GB): 2.75/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:05,972 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 8 jobs ready. Free memory (GB): 1.86/30.00, Free processors: 33/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:07,972 nipype.workflow INFO:
+	 [Job 187] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:55:07,973 nipype.workflow INFO:
+	 [Job 189] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:55:07,974 nipype.workflow INFO:
+	 [Job 197] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:55:07,975 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 11 jobs ready. Free memory (GB): 2.75/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:08,101 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-01_bold.nii.gz/datasink".
+220305-21:55:08,160 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:08,175 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:55:08,175 nipype.workflow INFO:
+	 [Job 202] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:55:08,302 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-02_bold.nii.gz/datasink".
+220305-21:55:08,384 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:08,432 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:55:08,432 nipype.workflow INFO:
+	 [Job 204] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:55:08,557 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-01_bold.nii.gz/datasink".
+220305-21:55:08,646 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:08,678 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:55:08,678 nipype.workflow INFO:
+	 [Job 212] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:55:09,974 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 11 jobs ready. Free memory (GB): 2.75/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:10,465 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:10,465 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:10,504 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:10,504 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:10,512 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:10,512 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:55:11,978 nipype.workflow INFO:
+	 [Job 221] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:55:11,979 nipype.workflow INFO:
+	 [Job 223] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:55:11,979 nipype.workflow INFO:
+	 [Job 231] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:55:11,981 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 8 jobs ready. Free memory (GB): 2.75/30.00, Free processors: 36/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.anatMRIQC.segmentation
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:33,991 nipype.workflow INFO:
+	 [Job 87] Completed (mriqc_wf.anatMRIQC.segmentation).
+220305-21:55:33,993 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 10 jobs ready. Free memory (GB): 7.75/30.00, Free processors: 37/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:35,995 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 6 jobs ready. Free memory (GB): 1.35/30.00, Free processors: 19/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.harmonize
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:37,995 nipype.workflow INFO:
+	 [Job 160] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:55:37,996 nipype.workflow INFO:
+	 [Job 127] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.harmonize).
+220305-21:55:37,998 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 8 jobs ready. Free memory (GB): 4.55/30.00, Free processors: 28/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:39,997 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 5 jobs ready. Free memory (GB): 1.15/30.00, Free processors: 18/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:41,998 nipype.workflow INFO:
+	 [Job 136] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:55:42,0 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 6 jobs ready. Free memory (GB): 4.15/30.00, Free processors: 26/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:43,999 nipype.workflow INFO:
+	 [Job 194] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:55:44,1 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 5 jobs ready. Free memory (GB): 1.15/30.00, Free processors: 18/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:46,0 nipype.workflow INFO:
+	 [Job 217] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.measures).
+220305-21:55:46,2 nipype.workflow INFO:
+	 [MultiProc] Running 10 tasks, and 5 jobs ready. Free memory (GB): 1.00/30.00, Free processors: 18/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:46,181 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/anatMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..anat..sub-122_ses-T1_T1w.nii.gz/datasink".
+220305-21:55:46,260 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:55:46,312 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.anatMRIQC.ComputeIQMs.datasink".
+220305-21:55:46,312 nipype.workflow INFO:
+	 [Job 235] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.datasink).
+220305-21:55:48,5 nipype.workflow INFO:
+	 [Job 188] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:55:48,6 nipype.workflow INFO:
+	 [Job 209] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:55:48,7 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 6 jobs ready. Free memory (GB): 1.55/30.00, Free processors: 20/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:50,7 nipype.workflow INFO:
+	 [Job 244] Completed (mriqc_wf.anatMRIQC.UploadMetrics).
+220305-21:55:50,9 nipype.workflow INFO:
+	 [MultiProc] Running 9 tasks, and 4 jobs ready. Free memory (GB): 1.20/30.00, Free processors: 19/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:52,8 nipype.workflow INFO:
+	 [Job 203] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:55:52,10 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 4 jobs ready. Free memory (GB): 1.55/30.00, Free processors: 20/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:54,9 nipype.workflow INFO:
+	 [Job 128] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation).
+220305-21:55:54,11 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 5 jobs ready. Free memory (GB): 1.75/30.00, Free processors: 21/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:56,11 nipype.workflow INFO:
+	 [Job 236] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.MergePlots).
+220305-21:55:56,13 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 5 jobs ready. Free memory (GB): 1.75/30.00, Free processors: 21/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:58,12 nipype.workflow INFO:
+	 [Job 245] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.GenerateReport).
+220305-21:55:58,14 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 5 jobs ready. Free memory (GB): 1.75/30.00, Free processors: 21/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:55:58,133 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..anat..sub-122_ses-T1_T1w.nii.gz/dsplots".
+220305-21:55:58,154 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-21:55:58,369 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots".
+220305-21:55:58,369 nipype.workflow INFO:
+	 [Job 253] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots).
+220305-21:56:00,15 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 4 jobs ready. Free memory (GB): 1.75/30.00, Free processors: 21/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:32,38 nipype.workflow INFO:
+	 [Job 152] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:56:32,40 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 5 jobs ready. Free memory (GB): 4.75/30.00, Free processors: 29/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:34,40 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 4 jobs ready. Free memory (GB): 4.55/30.00, Free processors: 28/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:36,40 nipype.workflow INFO:
+	 [Job 144] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:56:36,41 nipype.workflow INFO:
+	 [Job 192] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:56:36,43 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 6 jobs ready. Free memory (GB): 7.75/30.00, Free processors: 37/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:38,42 nipype.workflow INFO:
+	 [Job 176] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:56:38,44 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 5 jobs ready. Free memory (GB): 10.20/30.00, Free processors: 43/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:40,45 nipype.workflow INFO:
+	 [Job 184] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:56:40,46 nipype.workflow INFO:
+	 [Job 207] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:56:40,47 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 4 jobs ready. Free memory (GB): 5.35/30.00, Free processors: 50/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:42,46 nipype.workflow INFO:
+	 [Job 190] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:56:42,48 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 4 jobs ready. Free memory (GB): 5.35/30.00, Free processors: 50/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:44,47 nipype.workflow INFO:
+	 [Job 198] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:56:44,49 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 4 jobs ready. Free memory (GB): 5.20/30.00, Free processors: 50/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:46,48 nipype.workflow INFO:
+	 [Job 200] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:56:46,49 nipype.workflow INFO:
+	 [Job 205] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:56:46,51 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 4 jobs ready. Free memory (GB): 5.40/30.00, Free processors: 51/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:48,49 nipype.workflow INFO:
+	 [Job 213] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:56:48,51 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 3 jobs ready. Free memory (GB): 5.40/30.00, Free processors: 51/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:56:50,51 nipype.workflow INFO:
+	 [Job 215] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:56:50,53 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 3 jobs ready. Free memory (GB): 5.75/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct
+220305-21:57:30,103 nipype.workflow INFO:
+	 [Job 43] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220305-21:57:30,105 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 7 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:32,105 nipype.workflow INFO:
+	 [Job 71] Completed (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220305-21:57:32,107 nipype.workflow INFO:
+	 [MultiProc] Running 6 tasks, and 3 jobs ready. Free memory (GB): 5.30/30.00, Free processors: 50/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.compute_tsnr
+                       * mriqc_wf.funcMRIQC.mean
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:34,110 nipype.workflow INFO:
+	 [Job 72] Completed (mriqc_wf.funcMRIQC.mean).
+220305-21:57:34,111 nipype.workflow INFO:
+	 [Job 73] Completed (mriqc_wf.funcMRIQC.compute_tsnr).
+220305-21:57:34,113 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 8 jobs ready. Free memory (GB): 5.70/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:36,116 nipype.workflow INFO:
+	 [Job 108] Completed (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220305-21:57:36,118 nipype.workflow INFO:
+	 [MultiProc] Running 8 tasks, and 10 jobs ready. Free memory (GB): 4.90/30.00, Free processors: 48/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.quality
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:38,118 nipype.workflow INFO:
+	 [Job 74] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220305-21:57:38,119 nipype.workflow INFO:
+	 [Job 112] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220305-21:57:38,119 nipype.workflow INFO:
+	 [Job 163] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220305-21:57:38,121 nipype.workflow INFO:
+	 [MultiProc] Running 11 tasks, and 4 jobs ready. Free memory (GB): 4.25/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:40,120 nipype.workflow INFO:
+	 [Job 109] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220305-21:57:40,121 nipype.workflow INFO:
+	 [Job 110] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220305-21:57:40,121 nipype.workflow INFO:
+	 [Job 111] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220305-21:57:40,122 nipype.workflow INFO:
+	 [Job 166] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220305-21:57:40,124 nipype.workflow INFO:
+	 [MultiProc] Running 7 tasks, and 5 jobs ready. Free memory (GB): 5.05/30.00, Free processors: 49/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.gcor
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.outliers
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:57:42,122 nipype.workflow INFO:
+	 [Job 164] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220305-21:57:42,122 nipype.workflow INFO:
+	 [Job 165] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220305-21:57:42,123 nipype.workflow INFO:
+	 [Job 167] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220305-21:57:42,125 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 4 jobs ready. Free memory (GB): 2.70/30.00, Free processors: 44/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:00,136 nipype.workflow INFO:
+	 [Job 162] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220305-21:58:00,138 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 5 jobs ready. Free memory (GB): 3.00/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:02,139 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 4 jobs ready. Free memory (GB): 2.70/30.00, Free processors: 44/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ComputeIQMs.measures
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:04,140 nipype.workflow INFO:
+	 [Job 195] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220305-21:58:04,142 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 5 jobs ready. Free memory (GB): 3.00/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:04,255 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Rhyming_bold.nii.gz/datasink".
+220305-21:58:04,293 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220305-21:58:04,308 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220305-21:58:04,308 nipype.workflow INFO:
+	 [Job 210] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220305-21:58:06,143 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 5 jobs ready. Free memory (GB): 3.00/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:06,541 nipype.interface WARNING:
+	 QC metrics upload failed to create an ID for the record uplOADED. rEsponse from server follows: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:58:06,541 nipype.interface WARNING:
+	 QC metrics failed to upload. Status 422: {"_status": "ERR", "_issues": {"bids_meta": {"PartialFourier": "must be of boolean type"}}, "_error": {"code": 422, "message": "Insertion failure: 1 document(s) contain(s) error(s)"}}
+220305-21:58:08,144 nipype.workflow INFO:
+	 [Job 229] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220305-21:58:08,146 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 3.00/30.00, Free processors: 45/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:22,153 nipype.workflow INFO:
+	 [Job 168] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220305-21:58:22,155 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 5 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:24,155 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 5.80/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:28,157 nipype.workflow INFO:
+	 [Job 196] Completed (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220305-21:58:28,159 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 5 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:30,159 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 5.65/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:32,159 nipype.workflow INFO:
+	 [Job 211] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220305-21:58:32,160 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 4 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:52,180 nipype.workflow INFO:
+	 [Job 153] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-21:58:52,182 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 5 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:54,182 nipype.workflow INFO:
+	 [Job 228] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-21:58:54,184 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 4 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:54,329 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-21:58:56,184 nipype.workflow INFO:
+	 [Job 240] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-21:58:56,186 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 4 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-21:58:56,286 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-02_bold.nii.gz/dsplots".
+220305-21:58:56,294 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-21:58:56,359 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-21:58:56,359 nipype.workflow INFO:
+	 [Job 249] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-21:58:58,189 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 3 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:00:30,273 nipype.workflow INFO:
+	 [Job 145] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:00:30,275 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 4 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:00:32,275 nipype.workflow INFO:
+	 [Job 226] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:00:32,277 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 3 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:00:32,421 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:00:34,277 nipype.workflow INFO:
+	 [Job 239] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:00:34,279 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 3 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:00:34,383 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Num_run-01_bold.nii.gz/dsplots".
+220305-22:00:34,391 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:00:34,459 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:00:34,459 nipype.workflow INFO:
+	 [Job 248] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:00:36,281 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 2 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:08,439 nipype.workflow INFO:
+	 [Job 129] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:02:08,441 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 3 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:10,443 nipype.workflow INFO:
+	 [Job 222] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:02:10,445 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 2 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:10,767 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:02:12,450 nipype.workflow INFO:
+	 [Job 237] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:02:12,451 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 2 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:12,552 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-01_bold.nii.gz/dsplots".
+220305-22:02:12,559 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:02:12,624 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:02:12,624 nipype.workflow INFO:
+	 [Job 246] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:02:14,455 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 1 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:22,471 nipype.workflow INFO:
+	 [Job 137] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:02:22,473 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 2 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:24,474 nipype.workflow INFO:
+	 [Job 224] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:02:24,475 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 1 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:24,719 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:02:26,480 nipype.workflow INFO:
+	 [Job 238] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:02:26,481 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 1 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:02:26,584 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Mult_run-02_bold.nii.gz/dsplots".
+220305-22:02:26,592 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:02:26,656 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:02:26,656 nipype.workflow INFO:
+	 [Job 247] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:02:28,482 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 0 jobs ready. Free memory (GB): 6.00/30.00, Free processors: 53/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:07:43,273 nipype.workflow INFO:
+	 [Job 177] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:07:43,275 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:07:45,275 nipype.workflow INFO:
+	 [Job 234] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:07:45,277 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:07:45,558 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:07:47,277 nipype.workflow INFO:
+	 [Job 243] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:07:47,282 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:07:47,422 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-02_bold.nii.gz/dsplots".
+220305-22:07:47,430 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:07:47,495 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:07:47,495 nipype.workflow INFO:
+	 [Job 252] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:07:49,280 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 14.00/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:08:19,352 nipype.workflow INFO:
+	 [Job 169] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:08:19,353 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:08:21,356 nipype.workflow INFO:
+	 [Job 232] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:08:21,358 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:08:21,486 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:08:23,359 nipype.workflow INFO:
+	 [Job 242] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:08:23,361 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:08:23,460 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Sub_run-01_bold.nii.gz/dsplots".
+220305-22:08:23,467 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:08:23,530 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:08:23,530 nipype.workflow INFO:
+	 [Job 251] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:08:25,362 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 0 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220305-22:09:25,473 nipype.workflow INFO:
+	 [Job 161] Completed (mriqc_wf.funcMRIQC.ICA).
+220305-22:09:25,475 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-22:09:27,475 nipype.workflow INFO:
+	 [Job 230] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220305-22:09:27,477 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-22:09:27,593 cli WARNING:
+	 Building bold report: no exclude index was found
+220305-22:09:29,478 nipype.workflow INFO:
+	 [Job 241] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220305-22:09:29,479 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220305-22:09:29,574 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds001486_sub-122/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds001486-mriqc..sourcedata..raw..sub-122..ses-T1..func..sub-122_ses-T1_task-Rhyming_bold.nii.gz/dsplots".
+220305-22:09:29,582 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220305-22:09:29,651 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220305-22:09:29,651 nipype.workflow INFO:
+	 [Job 250] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220305-22:09:31,744 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220305-22:09:31,744 cli IMPORTANT:
+	 Participant level finished successfully.
+220305-22:09:31,745 cli INFO:
+	 Generating BIDS derivatives metadata.
+220305-22:09:31,748 cli INFO:
+	 MRIQC completed.
